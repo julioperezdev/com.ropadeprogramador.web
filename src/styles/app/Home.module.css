@@ -1,0 +1,21 @@
+.presentationBase{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 30%);
+    margin: 100px 0 100px 0;
+}
+
+.presentationBase > div{
+    text-align: center;
+    align-self: center;
+}
+.sloganBase{
+    
+}
+
+.sloganBase >h2{
+    font-size: 150px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}

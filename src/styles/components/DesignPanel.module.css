@@ -1,0 +1,139 @@
+.designPanelBase{
+    display: grid;
+    grid-template-columns: 60% 5px 38%;
+    margin: 20px 0 0 0;
+}
+
+.containerPagination{
+    display: grid;
+    grid-template-columns: repeat(6,16%);
+    justify-items: center;
+    width: 50%;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+.pageClassName{
+    list-style: none;
+}
+.previousButtons{
+    list-style: none;
+    cursor: w-resize;
+}
+
+.nextButtons{
+    list-style: none;
+    cursor: e-resize;
+}
+
+.line{
+    background-color: rgb(196, 196, 196);
+    border-radius: 100px;
+}
+
+.imagePanel{
+    margin:20px;
+    height: 85vh;
+    overflow:hidden;
+    overflow-y:auto;
+}
+
+.imagePanel::-webkit-scrollbar {
+    width: 1px;
+}
+
+.imagesList{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+}
+
+.particularDesign{
+    border: 2px solid rgb(236, 236, 236);
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px rgb(238, 238, 238);
+}
+
+.particularDesign > img{
+    margin:20px;
+    border-radius: 10px;
+}
+
+.buttonBase{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    justify-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+.preSelectedProductBase{
+    text-align: center;
+}
+
+.preSelectedProduct{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    justify-items: center;
+}
+
+.colorBase{
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    justify-items: center;
+    width: 50%;
+}
+
+.colorBase > div{
+    border: 1px solid rgb(234, 234, 234);
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px rgb(238, 238, 238);
+}
+
+.red{
+    background-color: rgb(207, 75, 75);
+}
+
+.blue{
+    background-color: rgb(67, 67, 196);
+}
+.pink{
+    background-color: rgb(233, 140, 156);
+}
+.yellow{
+    background-color: rgb(238, 238, 99);
+}
+.black{
+    background-color: rgb(27, 26, 26);
+}
+.gray{
+    background-color: rgb(133, 128, 128);
+}
+
+.shirtSize{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+
+.shirtSize > p {
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 20px;
+    width: 40px;
+    height: 20px;
+    box-shadow: 2px 2px 10px 2px rgb(238, 238, 238);
+    padding: 0 5px;
+}
+
+.confirmButton{
+    margin: auto;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    box-shadow: 2px 2px 10px 2px rgb(238, 238, 238);
+    padding: 0 5px;
+}

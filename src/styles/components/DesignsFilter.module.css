@@ -1,0 +1,36 @@
+.base{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    width: 80vw;
+    justify-self: center;
+    box-shadow: 3px 3px 3px 3px rgb(252, 245, 255);
+    border-radius: 20px;
+    margin: auto;
+}
+
+.base > div{
+    justify-self: center;
+    align-self: center;
+}
+
+.textButtonBase > p{
+    font-size: 12px;
+    color: rgb(74, 74, 74);
+    cursor: -webkit-grab; cursor: grab;
+}
+
+.logosBase{
+    text-align: center;    
+}
+
+.logosBase > p{
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    color:rgb(137, 137, 137);
+    cursor: default;
+}
+
+.logosBase > div > a > img{
+    margin: 2px 20px;
+    cursor: -webkit-grab; cursor: grab;
+}

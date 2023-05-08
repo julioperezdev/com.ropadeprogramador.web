@@ -9,20 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.66.4",
+    "@react-three/fiber": "^8.13.0",
     "@types/node": "20.1.0",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
+    "framer-motion": "^10.12.8",
+    "maath": "^0.5.3",
     "next": "13.4.1",
     "react": "18.2.0",
+    "react-color": "^2.19.3",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9",
     "react-hot-toast": "^2.4.1",
+    "react-paginate": "^8.2.0",
+    "three": "^0.152.2",
     "typescript": "5.0.4",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "valtio": "^1.10.5"
   },
   "devDependencies": {
-    "@types/uuid": "^9.0.1"
+    "@types/react-color": "^3.0.6",
+    "@types/uuid": "^9.0.1",
+    "autoprefixer": "^10.4.14"
   }
 }

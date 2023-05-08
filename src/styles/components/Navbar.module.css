@@ -1,0 +1,7 @@
+.navbarBase{
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    z-index: 1;
+    width: 100%; 
+}
