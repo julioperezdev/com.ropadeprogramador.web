@@ -54,6 +54,24 @@
     box-shadow: 2px 2px 10px 2px rgb(238, 238, 238);
 }
 
+.particularDesign:hover{
+    animation-name: particularDesignHover;
+    animation-duration: 4s;
+}
+
+@keyframes particularDesignHover {
+    from {
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(236, 236, 236);
+        opacity: 100%;
+        box-shadow: 2px 2px 10px 2px rgb(238, 238, 238);}
+    to {
+        background-color: rgb(225, 225, 225);
+        border: 2px solid rgb(225, 225, 225);
+        opacity: 80%;
+        box-shadow: 3px 3px 11px 3px rgb(203, 203, 203);}
+}
+
 .particularDesign > img{
     margin:20px;
     border-radius: 10px;
@@ -61,10 +79,14 @@
 
 .buttonBase{
     display: grid;
-    grid-template-columns: repeat(2,50%);
     justify-items: center;
-    width: 50%;
-    margin: auto;
+    margin: 0 auto;
+}
+
+.buttonBase > p{
+    margin: 0px auto;
+    text-align: center;
+    font-size: 35px;
 }
 
 .preSelectedProductBase{
