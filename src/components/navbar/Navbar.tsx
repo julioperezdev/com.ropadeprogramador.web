@@ -16,6 +16,13 @@ export default function Navbar() {
                 width={50}
                 height={50}/>
             </Link>
+            <a href='#section3'>
+                <Image
+                src='/cart.png'
+                alt='logo ropa de programador'
+                width={40}
+                height={40}/>
+            </a>
         </header>
     )
 }
