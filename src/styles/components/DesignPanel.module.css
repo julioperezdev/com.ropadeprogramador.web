@@ -159,3 +159,84 @@
     box-shadow: 2px 2px 10px 2px rgb(238, 238, 238);
     padding: 0 5px;
 }
+
+.cartBase{
+    border: 2px solid rgb(246, 246, 246);
+    border-radius: 30px;
+    padding: 20px;
+    display: grid;
+    margin: 20px 0 0 30px;
+    box-shadow: 2px 2px 10px 2px rgb(238, 238, 238);
+}
+
+.particularCartBase{
+    display: grid;
+    grid-template-columns: 15% 15% 25% 30% 15%;
+    align-items: center;
+    justify-items: center;
+    margin: 0 0 20px 0;
+}
+
+
+.descriptionParticularCart{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.descriptionParticularCart > p{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    align-self: center;
+    color: rgb(138, 138, 138);
+}
+
+.cartSize{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+
+.cartSize > p {
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 20px;
+    width: 30px;
+    height: 20px;
+    box-shadow: 2px 2px 10px 2px rgb(238, 238, 238);
+    padding: 0 3px;
+    font-size: 12px;
+}
+
+.totalPriceBase{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 400px;
+    border-top: 1px solid rgb(242, 242, 242);
+    justify-self: end;
+}
+
+.totalPriceBase > p {
+    padding: 0;
+    margin: 5px auto;
+}
+
+.totalPriceDescription{
+    font-size: 20px;
+
+}
+.totalPriceData{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.totalPriceData > p {
+    margin: 0;
+    padding: 0;
+}
+
+.totalPrice{
+    font-size: 30px;
+}
+
+.totalPriceCurrency{
+    font-size: 10px;
+    color: rgb(202, 202, 202);
+}
