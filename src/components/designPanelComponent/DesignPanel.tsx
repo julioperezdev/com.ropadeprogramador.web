@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image'
-import ReactPaginate from 'react-paginate';
+import ImagesPanel from '../imagesPanelComponent/ImagesPanel';
 import styles from '../../styles/components/DesignPanel.module.css'
 
 export default function DesignPanel() {
@@ -50,52 +50,7 @@ export default function DesignPanel() {
 
     return (
         <div className={styles.designPanelBase}>
-            <div className={styles.imagePanel}>
-                <ReactPaginate
-                    breakLabel="..."
-                    nextLabel=">"
-                    onPageChange={handlePageClick}
-                    pageRangeDisplayed={3}
-                    pageCount={pageCount}
-                    previousLabel="<"
-                    renderOnZeroPageCount={null}
-                    containerClassName={styles.containerPagination}
-                    pageClassName={styles.pageClassName}
-                    breakClassName={styles.breakClassName}
-                    previousClassName={styles.previousButtons}
-                    nextClassName={styles.nextButtons}
-
-                />
-                <div className={styles.imagesList}>
-                    {currentItems && currentItems.map(particularDesign => (
-                        <div className={styles.particularDesign} key={particularDesign}>
-                            <Image
-                                src={particularDesign}
-                                alt={particularDesign.substring(8)}
-                                width={180}
-                                height={180} />
-                            <div className={styles.buttonBase}>
-                                <p>👀</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-                {/* <ReactPaginate
-                    breakLabel="..."
-                    nextLabel=">"
-                    onPageChange={handlePageClick}
-                    pageRangeDisplayed={3}
-                    pageCount={pageCount}
-                    previousLabel="<"
-                    renderOnZeroPageCount={null}
-                    containerClassName={styles.containerPagination}
-                    pageClassName={styles.pageClassName}
-                    breakClassName={styles.breakClassName}
-                    previousClassName={styles.previousButtons}
-                    nextClassName={styles.nextButtons}
-
-                /> */}
-            </div>
+            <ImagesPanel/>
             <div className={styles.line}></div>
             <div className={styles.preSelectedProductBase}>
                 <p>
