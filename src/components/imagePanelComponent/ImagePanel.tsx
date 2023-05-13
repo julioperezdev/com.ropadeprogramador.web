@@ -3,8 +3,9 @@ import React, { useState } from 'react';
 import styles from '../../styles/components/ImagesPanel.module.css'
 import ReactPaginate from 'react-paginate';
 import Image from 'next/image'
+import ParticularImage from '../particularImageComponent/ParticularImage';
 
-export default function ImagesPanel(){
+export default function ImagePanel(){
 
     function buildDesigns(): Array<string> {
         return [
@@ -67,16 +68,8 @@ export default function ImagesPanel(){
                 />
                 <div className={styles.imagesList}>
                     {currentItems && currentItems.map(particularDesign => (
-                        <div className={styles.particularDesign} key={particularDesign}>
-                            <Image
-                                src={particularDesign}
-                                alt={particularDesign.substring(8)}
-                                width={180}
-                                height={180} />
-                            <div className={styles.buttonBase}>
-                                <p>👀</p>
-                            </div>
-                        </div>
+                        <ParticularImage
+                        particularDesign={particularDesign}/>
                     ))}
                 </div>
             </div>

@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image'
-import ImagesPanel from '../imagesPanelComponent/ImagesPanel';
+import ImagePanel from '../imagePanelComponent/ImagePanel';
 import PrevisualizerComponent from '../previsualizerComponent/PrevisualizerComponent';
 import CartComponent from '../cartComponent/CartComponent';
 import ShippingFormComponent from '../shippingFormComponent/ShippingFormComponent';
@@ -53,7 +53,7 @@ export default function DesignPanel() {
 
     return (
         <div className={styles.designPanelBase}>
-            <ImagesPanel/>
+            <ImagePanel/>
             <div className={styles.line}></div>
             <PrevisualizerComponent/>
             <CartComponent/>
