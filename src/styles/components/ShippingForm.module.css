@@ -1,0 +1,23 @@
+
+.shippingDataBase{
+    margin: 30px 0 50px 0;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+.shippingDataBase > div{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.shippingDataBase > div > input{
+    margin: 5px;
+    height: 30px;
+    width: 200px;
+}
+
+.shippingDataBase > div > select{
+    margin: 5px;
+    height: 30px;
+    width: 200px;
+}
