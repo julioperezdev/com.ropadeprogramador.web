@@ -1,0 +1,27 @@
+.sizeCategoryBase{
+    border-radius: 20px;
+    border: 1px solid rgb(224, 224, 224);
+    color: rgb(211, 211, 211);
+    box-shadow: 1px 1px 5px 1px rgb(208, 208, 208);
+    margin: 3px;
+    opacity: 50%;
+    cursor: pointer;
+    
+}
+
+.sizeCategoryBase:hover{
+    border-radius: 20px;
+    color: rgb(163, 163, 163);
+    opacity: 80%;
+}
+
+.size{
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+
+.size:hover{
+    color: rgb(38, 38, 38);
+    opacity: 100%;
+    font-weight: 800;
+}

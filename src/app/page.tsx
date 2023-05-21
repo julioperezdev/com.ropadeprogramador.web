@@ -5,13 +5,6 @@ import DesignPanel from "@/components/designPanelComponent/DesignPanel";
 
 export default function HomePage() {
 
-  function rotateModels(oldModel: string): string {
-    const models = ['/model1.png', '/model2.png', '/model3.png']
-    const iterator = models.values();
-    if (iterator.next().done) return models[0];
-    return iterator.next().value;
-  }
-
   return (
     <>
       <div className={styles.presentationBase}>
