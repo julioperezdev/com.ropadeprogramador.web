@@ -1,5 +1,5 @@
 
-
+'use client'
 import styles from '../../styles/components/ShippingForm.module.css'
 
 export default function ShippingFormComponent(){

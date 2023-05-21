@@ -1,77 +1,29 @@
-
-import Image from 'next/image'
+'use client'
+import CartProductComponent from '../cartProductComponent/CartProductComponent'
 import styles from '../../styles/components/Cart.module.css'
 
 export default function CartComponent() {
     return (
         <div className={styles.cartBase}>
             <div className={styles.subTotalCartBase}>
-                <div className={styles.particularCartBase}>
-                    <Image
-                        src='/designs/springFramework.png'
-                        alt='modelo de camiseta con diseño frontal'
-                        width={50}
-                        height={50} />
-                    <Image
-                        src='/options/optionFront.png'
-                        alt='modelo de camiseta con diseño frontal'
-                        width={40}
-                        height={40} />
-                    <div className={styles.descriptionParticularCart}>
-                        <p>Java Mate design</p>
-                        <p>color: azul  talla: XL</p>
-                    </div>
-                    <div className={styles.cartSize}>
-                        <p>-</p>
-                        <p>1</p>
-                        <p>+</p>
-                    </div>
-                    <p>30500 $</p>
-                </div>
-                <div className={styles.particularCartBase}>
-                    <Image
-                        src='/designs/subteSQL.png'
-                        alt='modelo de camiseta con diseño frontal'
-                        width={50}
-                        height={50} />
-                    <Image
-                        src='/options/optionFront.png'
-                        alt='modelo de camiseta con diseño frontal'
-                        width={40}
-                        height={40} />
-                    <div className={styles.descriptionParticularCart}>
-                        <p>Java Mate design</p>
-                        <p>color: rojo  talla: XL</p>
-                    </div>
-                    <div className={styles.cartSize}>
-                        <p>-</p>
-                        <p>1</p>
-                        <p>+</p>
-                    </div>
-                    <p>30500 $</p>
-                </div>
-                <div className={styles.particularCartBase}>
-                    <Image
-                        src='/designs/deployEveryday.png'
-                        alt='modelo de camiseta con diseño frontal'
-                        width={50}
-                        height={50} />
-                    <Image
-                        src='/options/optionBack.png'
-                        alt='modelo de camiseta con diseño frontal'
-                        width={40}
-                        height={40} />
-                    <div className={styles.descriptionParticularCart}>
-                        <p>Java Mate design</p>
-                        <p>color: negro  talla: S</p>
-                    </div>
-                    <div className={styles.cartSize}>
-                        <p>-</p>
-                        <p>1</p>
-                        <p>+</p>
-                    </div>
-                    <p>30500 $</p>
-                </div>
+                <CartProductComponent
+                design={'/designs/springFramework.png'}
+                position={'/options/optionFront.png'}
+                designName={'Java Mate design'}
+                color={'azul'}
+                size={'XL'}/>
+                <CartProductComponent
+                design={'/designs/subteSQL.png'}
+                position={'/options/optionFront.png'}
+                designName={'Subte SQL design'}
+                color={'rojo'}
+                size={'M'}/>
+                <CartProductComponent
+                design={'/designs/deployEveryday.png'}
+                position={'/options/optionBack.png'}
+                designName={'Deploy with Jenkins'}
+                color={'negro'}
+                size={'S'}/>
             </div>
             <div className={styles.totalPriceBase}>
                 <p className={styles.totalPriceDescription}>Total</p>

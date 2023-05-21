@@ -1,13 +1,17 @@
 import styles from '../../styles/components/ColorOption.module.css'
-export default function ColorOption() {
+import { v4 as uuid } from 'uuid'
+export default function ColorOption({ colors }: { colors: string[] }) {
+
     return (
         <div className={styles.colorBase}>
-            <div className={styles.red}></div>
-            <div className={styles.blue}></div>
-            <div className={styles.pink}></div>
-            <div className={styles.yellow}></div>
-            <div className={styles.black}></div>
-            <div className={styles.gray}></div>
+            {colors && colors.map((color) => (
+                <div
+                    key={uuid()}
+                    style={{
+                        backgroundColor:`${color}`
+                    }}>
+                </div>
+            ))}
         </div>
     )
 }
