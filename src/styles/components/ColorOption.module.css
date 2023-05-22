@@ -6,7 +6,7 @@
     width: 50%;
 }
 
-.colorBase > div{
+.color{
     border: 1px solid rgb(234, 234, 234);
     width: 30px;
     height: 30px;
@@ -16,7 +16,16 @@
 
 }
 
-.colorBase > div:hover{
+.color:hover{
     border: 1px solid rgb(199, 199, 199);
     box-shadow: 2px 2px 10px 2px rgb(200, 200, 200);
+}
+
+.colorSelected{
+    border: 1px solid rgb(111, 111, 111);
+    box-shadow: 2px 2px 10px 2px rgb(126, 126, 126);
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 20px;
 }

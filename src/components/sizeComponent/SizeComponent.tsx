@@ -14,6 +14,8 @@ export default function SizeComponent({ sizes, updateColor }: SizeRequest) {
     const [mediumSizes, setMediumSizes] = useState<string[]>([])
     const [largeSizes, setLargeSizes] = useState<string[]>([])
     const [rendered, setRendered] = useState<boolean>(false)
+    const [sizeSelected, setSizeSelected] = useState<string>('')
+    const [sizeCategorySelected, setSizeCategorySelected] = useState<string>('')
 
     const REGEX_SIZE_CATEGORY= /[sSmMlL]/;
     const S_SIZE: string = 'S';
@@ -46,9 +48,9 @@ export default function SizeComponent({ sizes, updateColor }: SizeRequest) {
         <div className={styles.shirtSize}>
             {rendered
                 ? <>
-                    <SizeCategoryComponent sizeCategory={smallSizes} updateColor={updateColor}/>
-                    <SizeCategoryComponent sizeCategory={mediumSizes} updateColor={updateColor}/>
-                    <SizeCategoryComponent sizeCategory={largeSizes} updateColor={updateColor}/>
+                    <SizeCategoryComponent category ='S' sizeCategory={smallSizes} updateColor={updateColor} sizeSelected = {sizeSelected} setSizeSelected ={setSizeSelected} sizeCategorySelected = {sizeCategorySelected} setSizeCategorySelected={setSizeCategorySelected}/>
+                    <SizeCategoryComponent category ='M' sizeCategory={mediumSizes} updateColor={updateColor} sizeSelected = {sizeSelected} setSizeSelected ={setSizeSelected} sizeCategorySelected = {sizeCategorySelected} setSizeCategorySelected={setSizeCategorySelected}/>
+                    <SizeCategoryComponent category ='L' sizeCategory={largeSizes} updateColor={updateColor} sizeSelected = {sizeSelected} setSizeSelected ={setSizeSelected} sizeCategorySelected = {sizeCategorySelected} setSizeCategorySelected={setSizeCategorySelected}/>
                 </>
                 : <p>loading...</p>}
         </div>

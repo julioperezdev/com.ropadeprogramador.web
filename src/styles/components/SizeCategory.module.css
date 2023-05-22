@@ -15,13 +15,29 @@
     opacity: 80%;
 }
 
+.sizeCategoryBaseSelected{
+    border-radius: 20px;
+    border: 1px solid rgb(224, 224, 224);
+    color: rgb(163, 163, 163);
+    box-shadow: 1px 1px 5px 1px rgb(208, 208, 208);
+    margin: 3px;
+    opacity: 100%;
+    cursor: pointer;
+}
+
 .size{
     padding: 10px 0 10px 0;
     margin: 0;
 }
 
 .size:hover{
-    color: rgb(38, 38, 38);
-    opacity: 100%;
+    color: rgb(71, 71, 71);
+    opacity: 90%;
     font-weight: 800;
+}
+
+.sizeSelected{
+    color: rgb(59, 59, 59);
+    opacity: 100%;
+    font-weight: 900;
 }

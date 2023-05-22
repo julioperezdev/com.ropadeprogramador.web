@@ -12,7 +12,8 @@ export default function PrevisualizerComponent() {
 
     const { availableSizeColor } = useDesign();
     const [size, setSize] = useState<string[]>([])
-    const [colorSelected, setColorSelected] = useState<string[]>([])
+    const [colors, setColors] = useState<string[]>([])
+    const [colorSelected, setColorSelected] = useState<string>('')
 
     async function updateColorToFirstRender(availableSizeColor: Map<string, string[]>) {
         updateColor(availableSizeColor.values().next().value);
@@ -20,7 +21,7 @@ export default function PrevisualizerComponent() {
 
     function updateColor(keyToSearch: string) {
         const colorFound = availableSizeColor.get(keyToSearch);
-        if (colorFound) setColorSelected(colorFound)
+        if (colorFound) setColors(colorFound)
     }
 
     function updateSizes(mapSizeColor: Map<string, string[]>) {
@@ -31,7 +32,7 @@ export default function PrevisualizerComponent() {
     useEffect(() => {
         console.log('esta cambiando')
         updateSizes(availableSizeColor);
-        if (colorSelected.length == 0) updateColorToFirstRender(availableSizeColor)
+        if (colors.length == 0) updateColorToFirstRender(availableSizeColor)
     }, [availableSizeColor])
 
     return (
@@ -51,7 +52,9 @@ export default function PrevisualizerComponent() {
                         updateColor={updateColor}
                         />
                     <ColorOption
-                        colors={colorSelected} />
+                        colors={colors}
+                        colorSelected={colorSelected} 
+                        setColorSelected ={setColorSelected}/>
                     <ShirtPositionComponent />
                     <CounterCartComponent />
                     <div>
